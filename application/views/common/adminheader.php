@@ -25,11 +25,11 @@
   </head>
  <body>
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="<?php echo base_url(); ?>">ACME Sujan</a>
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="<?php echo base_url(); ?>admin">ACME Sujan</a>
     
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="<?php echo base_url(); ?>logout">Logout </a>
+          <a class="nav-link" href="<?php echo base_url(); ?>admin/logout">Logout </a>
         </li>
       </ul>
     </nav>
@@ -44,17 +44,17 @@
             <div class="btn-toolbar mb-2 mb-md-0">
             
            <?php if(@$title==''){ ?>
-            <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>Main">
+            <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/Main">
                 <span class="fa fa-plus"></span>
                Add Main Category </a> || 
-              <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>addMain">
+              <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addMain">
                 <span class="fa fa-plus"></span>
                Add Sub Category </a> || 
-                   <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>addSub">
+                   <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addSub">
                 <span class="fa fa-plus"></span>
                Add  Product </a>
                <?php } else { ?>
-   <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>Dashboard">
+   <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/Dashboard">
                 <span class="fa fa-arrow-left"></span>
               Back to Dashboard</a>
            <?php  } ?>  

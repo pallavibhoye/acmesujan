@@ -174,7 +174,7 @@
                         </ul> -->
 
                         <div class="btn-box text-center">
-                            <a href="about.html" class="theme-btn btn-style-one">About Us</a>
+                            <a href="about" class="theme-btn btn-style-one">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                             <img src="<?php echo base_url() ?>assets/images/prodct.gif">
                           
                         </div>
-                        <h4><a href="about.html">CAPABILITIES</a></h4>
+                        <h4><a href="about">CAPABILITIES</a></h4>
                         <div class="text">
 
                                Maintaining the highest safety, health and environment standards, our team has achieved excellence in many different reaction capabilities.<br>
@@ -220,7 +220,7 @@
                         <div class="icon-box">
                             <img src="<?php echo base_url() ?>assets/images/security.gif">
                         </div>
-                        <h4><a href="about.html">PRODUCTS</a></h4>
+                        <h4><a href="about">PRODUCTS</a></h4>
                         <div class="text">
                                We manufacture wide range of products under the categories like Phase Transfer Catalyst, Amine Hydrochlorides /Hydro bromides, Cosmetic and Preservatives, Photographic Chemicals, UV Screen Chemicals, Perfumery Intermediates, & Corrosion Inhibiters. <br>
                                <a href="">Read More</a>
@@ -235,7 +235,7 @@
                         <div class="icon-box">
                             <img src="<?php echo base_url() ?>assets/images/why-us.gif">
                         </div>
-                        <h4><a href="about.html">ABOUT US</a></h4>
+                        <h4><a href="about">ABOUT US</a></h4>
                         <div class="text"> Maintaining the highest safety, health and environment standards, our team has achieved excellence in many different reaction capabilities.<br>
                                <a href="">Read More</a>
                         </div>
@@ -596,7 +596,7 @@
                                 <li>January 18, 2019</li>
                                
                             </ul>
-                            <h5><a href="blog-detail.html">Heading Heading Heading Heading Heading Heading </a></h5>
+                            <h5><a href="blog-detail">Heading Heading Heading Heading Heading Heading </a></h5>
                             <div class="comments"> Demo Text Demo Text Demo Text  Demo Text Demo Text Demo Text
                             </div>
                             </div>
@@ -614,7 +614,7 @@
                                 <li>January 18, 2019</li>
                                
                             </ul>
-                            <h5><a href="blog-detail.html">Heading Heading Heading Heading Heading Heading </a></h5>
+                            <h5><a href="blog-detail">Heading Heading Heading Heading Heading Heading </a></h5>
                             <div class="comments"> Demo Text Demo Text Demo Text  Demo Text Demo Text Demo Text
                             </div>
                             </div>
@@ -632,7 +632,7 @@
                                 <li>January 18, 2019</li>
                                
                             </ul>
-                            <h5><a href="blog-detail.html">Heading Heading Heading Heading Heading Heading </a></h5>
+                            <h5><a href="blog-detail">Heading Heading Heading Heading Heading Heading </a></h5>
                             <div class="comments"> Demo Text Demo Text Demo Text  Demo Text Demo Text Demo Text
                             </div>
                             </div>
@@ -661,7 +661,7 @@
             <div class="content-box wow fadeIn">
                 <h2>GET IN TOUCH</span></h2>
                 <div class="text">Contact us or email us for all inquires and correspondence.</div>
-                <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Contact Us</a></div>
+                <div class="btn-box"><a href="contact" class="theme-btn btn-style-one">Contact Us</a></div>
             </div>
         </div>
     </section> -->
@@ -673,7 +673,7 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="<?php echo base_url() ?>assets/images/footer-logo-new.png" class="img-responsive">
-                <div class="btn-box btn-footer "><a href="contact.html" class="theme-btn btn-style-one">Contact Us</a></div>
+                <div class="btn-box btn-footer "><a href="contact" class="theme-btn btn-style-one">Contact Us</a></div>
             </div>
              <div class="col-md-9">
                    <div class="widgets-section">
@@ -688,12 +688,12 @@
                                     <h2 class="widget-title">Quick link</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about">About Us</a></li>
                                            
-                                            <li><a href="main-product.html">Products</a></li>
-                                            <li><a href="index.html#why">Blog</a></li>
-                                             <li><a href="index.html#why">capability</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="main-product">Products</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                             <li><a href="capability">capability</a></li>
+                                            <li><a href="contact">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>

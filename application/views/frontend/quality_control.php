@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from t.commonsupport.com/industar/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 09:28:54 GMT -->
+<!-- Mirrored from t.commonsupport.com/industar/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 09:28:54 GMT -->
 <head>
 <meta charset="utf-8">
 <title>Acme Sujan Chemicals</title>
@@ -30,175 +30,15 @@
     <div class="preloader"></div>
 
  
-    <header class="main-header">
-        <!-- Header Top -->
-        <div class="header-top">
-            <div class="auto-container clearfix">
-                <div class="top-right clearfix">
-                    <ul class="info-list"> <div class="icon"></div>
-                      
-                        <li> <span class="la la-certificate"></span>ISO 9001:2008 Certified Company </li>
-                        <li><span class="material-icons">email</span><a href="mailto:info@acmesujan.com">info@acmesujan.com</a></li>
-                       
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Header Upper -->
-        <div class="header-upper">
-            <div class="inner-container">
-                <div class="auto-container clearfix">
-                    <!--Logo-->
-                    <div class="col-md-8"></div>
-
-                    <div class="logo-outer">
-                        <div class="logo"><a href=""><img src="images/logo.png" alt=""> </a>
-
-                        </div>
-                    </div>
-
-                    <!--Info-->
-                    <div class="info-outer clearfix">
-                      
-
-
-                        
-                        <!--Search Box-->
-                        <div class="search-box-outer">
-                            
-                                
-                                <ul class="dropdown-menu pull-right search-panel show" aria-labelledby="dropdownMenu3">
-                                    <li class="panel-outer">
-                                        <div class="form-container">
-                                            <form method="post" action="http://t.commonsupport.com/industar/index.html">
-                                                <div class="form-group">
-                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                </ul>
-                          
-                        </div>
-
-                        <!--Info Box-->
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End Header Upper-->
-
-        <!-- Header Lower -->
-        <div class="header-lower">
-            <div class="auto-container">
-                <!--Nav Box-->
-                <div class="nav-outer clearfix">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="navbar-header">
-                            <!-- Togg le Button -->      
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon flaticon-menu-button"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li class="current "><a href="index.html">Home</a>
-                                   
-                                </li>
-                                
-                                 <li class="dropdown"><a href="#">About</a>
-                                    <ul>
-                                        <li><a href="about.html">Company Profile</a></li>
-                                        <li><a href="mission.html">Mission & Vision</a></li>
-                                        <li><a href="quality_control.html">Quality control</a></li>
-                                        
-                                        
-                                        
-                                    </ul>
-                                </li>
-                                <li class=""><a href="main-product.html">Products</a>
-                                   
-                                </li>
-                                  <li class=""><a href="capability.html">Capability</a></li>
-                                 <li class=""><a href="blog.html">Blog</a>
-                                   
-                                </li>
-                               
-                             
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
-
-                    <!-- Main Menu End-->
-                    <div class="outer-box clearfix">
-                        <!--Search Box-->
-                       
-
-                        <div class="social-links">
-                            <ul class="social-icon-one">
-                                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-left">
-                    <a href="" title=""><img src="images/logo-small.png" alt="" title=""></a>
-                </div>
-                <!--Right Col-->
-                <div class="pull-right">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <div class="navbar-collapse show collapse clearfix">
-                             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
-                        </div>
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
-            
-            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-            <nav class="menu-box">
-                <div class="nav-logo"><a href=""><img src="images/nav-logo.png" alt="" title=""></a></div>
-                
-                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-    </header>
-    <!-- End Main Header -->
+  
 
      <!--Page Title-->
-    <section class="page-banner" style="background-image:url(images/main-slider/about-us-banner.jpg);">
+    <section class="page-banner" style="background-image:url(<?php echo base_url() ?>assets/images/main-slider/about-us-banner.jpg);">
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <h1>QUALITY CONTROL</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index.html"><i class="la la-home"></i>Home</a></li>
+                    <li><a href="home"><i class="la la-home"></i>Home</a></li>
                     <li>QUALITY CONTROL</li>
                 </ul>
             </div>
@@ -232,9 +72,9 @@
                     <div>
                         <ul class="tab1">
                             
-                           <li class="tablinks active hvr-bounce-to-bottom"><a href="about.html"> Company Profile</a></li>
-                           <li class="hvr-bounce-to-bottom"><a href="mission.html">Mission & Vision</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="quality_control.html">Quality Control</a></li>
+                           <li class="tablinks active hvr-bounce-to-bottom"><a href="about"> Company Profile</a></li>
+                           <li class="hvr-bounce-to-bottom"><a href="mission">Mission & Vision</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="quality_control">Quality Control</a></li>
                        
                             <li class="hvr-bounce-to-bottom"><a href="">News 1</a></li>
                             <li class="hvr-bounce-to-bottom"><a href="">News 2</a></li>
@@ -362,13 +202,13 @@
 
   
     
-    <!-- Main Footer -->
+     <!-- Main Footer -->
     <footer class="main-footer alternate" >
         <!--Widgets Section-->
         <div class="row">
             <div class="col-md-3">
-                <img src="images/footer-logo-new.png" class="img-responsive">
-                <div class="btn-box btn-footer "><a href="contact.html" class="theme-btn btn-style-one">Contact Us</a></div>
+                <img src="<?php echo base_url() ?>assets/images/footer-logo-new.png" class="img-responsive">
+                <div class="btn-box btn-footer "><a href="contact" class="theme-btn btn-style-one">Contact Us</a></div>
             </div>
              <div class="col-md-9">
                    <div class="widgets-section">
@@ -383,12 +223,12 @@
                                     <h2 class="widget-title">Quick link</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about">About Us</a></li>
                                            
-                                            <li><a href="main-product.html">Products</a></li>
-                                            <li><a href="index.html#why">Blog</a></li>
-                                             <li><a href="index.html#why">capability</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="main-product">Products</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                             <li><a href="capability">capability</a></li>
+                                            <li><a href="contact">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -402,9 +242,9 @@
                             <div class="news-widget-block">
                                 <div class="widget-inner">
                                     <div class="image">
-                                        <a href="#"><img src="images/resource/news-thumb-1.jpg" alt="" /></a>
+                                        <a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-thumb-1.jpg" alt="" /></a>
                                     </div>
-                                    <h3><a href="blog-single.html">We are Best For Any Industrial And Business Solution.</a></h3>
+                                    <h3><a href="blog-single">We are Best For Any Industrial And Business Solution.</a></h3>
                                     <div class="post-date">March 16, 2019</div>
                                 </div>
                             </div>
@@ -413,9 +253,9 @@
                             <div class="news-widget-block">
                                 <div class="widget-inner">
                                     <div class="image">
-                                        <a href="#"><img src="images/resource/news-thumb-2.jpg" alt="" /></a>
+                                        <a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-thumb-2.jpg" alt="" /></a>
                                     </div>
-                                    <h3><a href="blog-single.html">Design and Advanced Materials As a Driver of Innovation.</a></h3>
+                                    <h3><a href="blog-single">Design and Advanced Materials As a Driver of Innovation.</a></h3>
                                     <div class="post-date">March 16, 2019</div>
                                 </div>
                             </div>
@@ -469,18 +309,3 @@ Dist : Thane (M.S.) India.</li>
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 <!--Scroll to top-->
 
-<script src="js/jquery.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/knob.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/script.js"></script>
-</body>
-
-<!-- Mirrored from t.commonsupport.com/industar/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 09:29:17 GMT -->
-</html>

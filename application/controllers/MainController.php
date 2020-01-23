@@ -6,8 +6,8 @@ class MainController extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->library('session');
-		$this->load->model('users_model');
-		$this->load->model('add_model');
+		$this->load->model('Users_model');
+		$this->load->model('Add_model');
 	}
 
 	public function index()
@@ -30,7 +30,7 @@ class MainController extends CI_Controller {
 	{
 		if(!$this->input->post()){
 		$data['title'] = 'Main Product';
-		$data['mainProduct']=$this->add_model->getMains();
+		$data['mainProduct']=$this->Add_model->getMains();
 		//print_r($data);
 		$this->load->view('common/adminheader',$data); 
         $this->load->view('admin/Main/addMain');
@@ -42,7 +42,7 @@ class MainController extends CI_Controller {
 					'description'=>$this->input->post('description'),
 				);
 			//	print_r($data);
-                $resp=$this->add_model->addMainCategory($alldata);
+                $resp=$this->Add_model->addMainCategory($alldata);
                 
                 if($resp){
                 $this->session->set_flashdata('success','Main Category added Successfully'); 

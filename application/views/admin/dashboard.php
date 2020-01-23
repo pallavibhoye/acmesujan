@@ -21,7 +21,7 @@
    <h1>
  <?php echo count($MainCats);?>
  </h1>
- <a href="<?php echo base_url('/Show/MainCategories'); ?>">Show All </a>
+ <a href="<?php echo base_url('/admin/Show/MainCategories'); ?>" class="btn btn-link">Show All </a>
   </div>
 </div>
   
@@ -34,7 +34,7 @@
    <h1>
  <?php echo count($SubCats);?>
  </h1>
- <a href="<?php echo base_url('/Show/SubCategories'); ?>">Show All </a>
+ <a href="<?php echo base_url('/admin/Show/SubCategories'); ?>" class="btn btn-link">Show All </a>
   </div>
 </div>
   
@@ -46,7 +46,7 @@
    <h1>
  <?php echo count($products);?>
  </h1>
- <a href="<?php echo base_url('/Show/Products'); ?>">Show All </a>
+ <a href="<?php echo base_url('/admin/Show/Products'); ?>" class="btn btn-link">Show All </a>
   </div>
 </div>
   

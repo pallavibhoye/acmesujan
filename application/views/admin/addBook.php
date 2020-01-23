@@ -2,22 +2,22 @@
 <div class="container register-form">
             <div class="form">
                 <div class="note">
-                    <p class="heading-4">Add Main product.</p>
+                    <p class="heading-4">Add Sub Category.</p>
                 </div>
 
                 <div class="form-content">
-                    <?php echo form_open_multipart('addMain'); ?>
+                    <?php echo form_open_multipart('admin/addMain'); ?>
                     <div class="row">
                         
                         <div class="col-md-6">
                       
-                                 <div class="form-group">
+                                 <!-- <div class="form-group">
                                     <label for="files" class="border p-4">
                                         <span class="fa fa-camera fa-3x"></span>
                                     </label>
                                 <input type="file" id="files" class="form-control d-none" name="image" onchange="readURL(this);"  />
 
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                  <label>Select Main Category</label>
                                <select name="maincategory_id" class="form-control">
@@ -32,9 +32,22 @@
                                 <input type="text" class="form-control" placeholder="Title" name="author_name" value=""/>
                             </div>
                             <div class="form-group">
+                                 <label>CAS</label>
+                                <input type="text" class="form-control" placeholder="cas" name="cas" value=""/>
+                            </div>
+                            <div class="form-group">
+                                 <label>Abbreviation</label>
+                                <input type="text" class="form-control" placeholder="Abbreviation" name="abbr" value=""/>
+                            </div>
+                            <div class="form-group">
+                                 <label>HSN Code</label>
+                                <input type="text" class="form-control" placeholder="HSN code" name="hsn" value=""/>
+                            </div>
+                            <!-- <div class="form-group">
                                 <label>Description(optional)</label>
                                 <textarea class="form-control" name="description" placeholder="description"></textarea>
-                            </div>
+                            </div> -->
+
                             <div class="form-group">
                                   <button type="submit" class="btnSubmit" >Submit</button>
 

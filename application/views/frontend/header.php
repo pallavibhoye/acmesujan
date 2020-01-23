@@ -38,7 +38,7 @@
 <body>
 
 
-<div class="page-wrapper">
+<div class="contact-main">
     <!-- Preloader -->
     <div class="preloader"></div>
 

@@ -6,7 +6,7 @@
                 </div>
 
                 <div class="form-content">
-                    <?php echo form_open_multipart('addSub'); ?>
+                    <?php echo form_open_multipart('admin/addSub'); ?>
                     <div class="row">
                         
                         <div class="col-md-6">
@@ -81,6 +81,6 @@
     }
     $("#maincategory_id").change(function(){
         let id=$(this).val();
-        window.location.href="<?php echo base_url()?>addSub/"+id;
+        window.location.href="<?php echo base_url()?>admin/addSub/"+id;
     })
     </script>

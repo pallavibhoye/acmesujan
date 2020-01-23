@@ -55,9 +55,11 @@ $route['admin/addSub'] = 'welcome/addSub';
 $route['admin/addSub/(:any)'] = 'welcome/addSub/$1';
 $route['admin/Show/(:any)'] = 'welcome/show/$1';
 $route['admin/Delete/(:any)/(:any)'] = 'welcome/delete/$1/$2';
-$route['ladmin/ogout'] = 'welcome/logout';
+$route['admin/logout'] = 'welcome/logout';
 $route['admin/Main'] = 'MainController';
 $route['admin'] = 'welcome';
+$route['sub-product/(:any)'] = 'frontend/renderSubProduct/$1';
+$route['product/(:any)'] = 'frontend/renderProduct/$1';
 $route['(:any)'] = 'frontend/index/$1';
 $route['default_controller'] = 'frontend';
 

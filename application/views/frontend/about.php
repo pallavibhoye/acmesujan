@@ -2,12 +2,12 @@
     <!-- End Main Header -->
 
      <!--Page Title-->
-    <section class="page-banner" style="background-image:url(images/main-slider/about-us-banner.jpg);">
+    <section class="page-banner" style="background-image:url(<?php echo base_url() ?>assets/images/main-slider/about-us-banner.jpg);">
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <h1>About Our Company</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href="index-2.html"><i class="la la-home"></i>Home</a></li>
+                    <li><a href="home"><i class="la la-home"></i>Home</a></li>
                     <li>About Us</li>
                 </ul>
             </div>
@@ -33,9 +33,9 @@
                     <div>
                         <ul class="tab1">
                             
-                            <li class="tablinks active hvr-bounce-to-bottom"><a href="about.html"> Company Profile</a></li>
-                           <li class="hvr-bounce-to-bottom"><a href="mission.html">Mission & Vision</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="quality_control.html">Quality Control</a></li>
+                            <li class="tablinks active hvr-bounce-to-bottom"><a href="about"> Company Profile</a></li>
+                           <li class="hvr-bounce-to-bottom"><a href="mission">Mission & Vision</a></li>
+                            <li class="hvr-bounce-to-bottom"><a href="quality_control">Quality Control</a></li>
                        
                             <li class="hvr-bounce-to-bottom"><a href="">News 1</a></li>
                             <li class="hvr-bounce-to-bottom"><a href="">News 2</a></li>
@@ -140,7 +140,7 @@
                         <div class="history-block">
                             <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                                
-                                <h4><a href="about.html">Expand Manufacturing Business</a></h4>
+                                <h4><a href="about">Expand Manufacturing Business</a></h4>
                                 <div class="text">Acme Sujan manufacturing site has been located, 400 km north of Mumbai (Bombay) in state of Maharashtra, India. Almost on central location of India’s map. In close proximity of world famous Ajanta caves of Lord Buddha and Ellora caves of Lord Shiva, well connected by national highways, Central Rail services and by Air.</div>
                               
                                
@@ -150,7 +150,7 @@
                         <div class="history-block" >
                             <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                               
-                                <h4><a href="about.html">Plant Information</a></h4>
+                                <h4><a href="about">Plant Information</a></h4>
                                 <div class="text">The plant has facilities such as glass, glass lined, and stainless steel; limped / jacketed reactors with well designed and packed with structured packing columns / condensers, High vacuum Distillation /fractionation facility. Hydro-extractors, Dryers like Rotary vacuum dryer, fluidized bed dryers, trey dryers, Boiler, Thermic Fluid heating system, Chilling Plant. Facilities are multipurpose so designed to swing the facilities as required for any products manufacturing. Engineering services, Quality Assurance and research and development groups support entire facility.</div>
                                  <div class="text">We have always believed that manpower is one of the important assets in the development of the company. <br>Care of environment is necessary at Acme Sujan Chemicals and not luxury. Due care and attention is given throughout the production process to ensure responsible handling of the chemicals, thus preserving and protecting the lush green belt surrounding the plant site, which we created, in small way contribution towards cleaner and greener environment.</div>
                             </div>
@@ -172,13 +172,13 @@
 
   
     
-    <!-- Main Footer -->
+     <!-- Main Footer -->
     <footer class="main-footer alternate" >
         <!--Widgets Section-->
         <div class="row">
             <div class="col-md-3">
-                <img src="images/footer-logo-new.png" class="img-responsive">
-                <div class="btn-box btn-footer "><a href="contact.html" class="theme-btn btn-style-one">Contact Us</a></div>
+                <img src="<?php echo base_url() ?>assets/images/footer-logo-new.png" class="img-responsive">
+                <div class="btn-box btn-footer "><a href="contact" class="theme-btn btn-style-one">Contact Us</a></div>
             </div>
              <div class="col-md-9">
                    <div class="widgets-section">
@@ -193,12 +193,12 @@
                                     <h2 class="widget-title">Quick link</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="about">About Us</a></li>
                                            
-                                            <li><a href="main-product.html">Products</a></li>
-                                            <li><a href="index.html#why">Blog</a></li>
-                                             <li><a href="index.html#why">capability</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="main-product">Products</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                             <li><a href="capability">capability</a></li>
+                                            <li><a href="contact">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -212,9 +212,9 @@
                             <div class="news-widget-block">
                                 <div class="widget-inner">
                                     <div class="image">
-                                        <a href="#"><img src="images/resource/news-thumb-1.jpg" alt="" /></a>
+                                        <a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-thumb-1.jpg" alt="" /></a>
                                     </div>
-                                    <h3><a href="blog-single.html">We are Best For Any Industrial And Business Solution.</a></h3>
+                                    <h3><a href="blog-single">We are Best For Any Industrial And Business Solution.</a></h3>
                                     <div class="post-date">March 16, 2019</div>
                                 </div>
                             </div>
@@ -223,9 +223,9 @@
                             <div class="news-widget-block">
                                 <div class="widget-inner">
                                     <div class="image">
-                                        <a href="#"><img src="images/resource/news-thumb-2.jpg" alt="" /></a>
+                                        <a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-thumb-2.jpg" alt="" /></a>
                                     </div>
-                                    <h3><a href="blog-single.html">Design and Advanced Materials As a Driver of Innovation.</a></h3>
+                                    <h3><a href="blog-single">Design and Advanced Materials As a Driver of Innovation.</a></h3>
                                     <div class="post-date">March 16, 2019</div>
                                 </div>
                             </div>
