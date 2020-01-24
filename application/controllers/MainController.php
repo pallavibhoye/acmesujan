@@ -49,10 +49,12 @@ class MainController extends CI_Controller {
                 } else{
                     $this->session->set_flashdata('error','Some error occured please try again'); 
                 }
-				redirect('Main');
+				redirect('admin/Main');
 		
 	}
 	
 	}
+
+
 
 }

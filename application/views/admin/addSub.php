@@ -10,13 +10,7 @@
                     <div class="row">
                         
                         <div class="col-md-6">
-                                 <div class="form-group">
-                                    <label for="files" class="border p-4">
-                                        <span class="fa fa-camera fa-3x"></span>
-                                    </label>
-                                <input type="file" id="files" class="form-control d-none" name="image" onchange="readURL(this);"  />
-
-                            </div>
+                               
                             <div class="form-group">
                                  <label>Select Main Category</label>
                                <select name="maincategory_id" class="form-control" 
@@ -47,6 +41,20 @@
                             <div class="form-group">
                                 <label>Description(optional)</label>
                                 <textarea class="form-control" name="description" placeholder="description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                    <label for="files">
+                                        Upload Image <small>(optional)</small>
+                                    </label>
+                                <input type="file" id="files" class="form-control " name="image" onchange="readURL(this);"  />
+
+                            </div>
+                            <div class="form-group">
+                                    <label for="files">
+                                        Upload PDF <small>(optional)</small>
+                                    </label>
+                                <input type="file" id="files" class="form-control " name="pdf" onchange="readURL(this);"  />
+
                             </div>
                             <div class="form-group">
                                   <button type="submit" class="btnSubmit" >Submit</button>
