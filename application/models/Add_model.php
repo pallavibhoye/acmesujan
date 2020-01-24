@@ -53,6 +53,10 @@ class Add_model extends CI_Model{
 		$query = $this->db->get('books');
 		return $query->result_array();
 	}
+
+	public function deleteById($id,$table){
+		return $this->db->delete($table, array('id' => $id));
+	}
 	
 }
 

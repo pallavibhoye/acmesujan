@@ -52,4 +52,18 @@ class Frontend extends CI_Controller
             $this->load->view('frontend/footer');
         }
     }
+    
+    public function SubmitToGetPdf(){
+		$name=$this->input->post('fname')." " .$this->input->post('lname');
+		$email=$this->input->post('email');
+		$number=$this->input->post('number');
+
+		$status=['success'=>true];
+		//$status=['success'=>false];
+
+        echo json_encode($status);
+        return;
+
+
+	}
 }

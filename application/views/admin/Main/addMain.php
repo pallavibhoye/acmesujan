@@ -6,7 +6,7 @@
                 </div>
 
                 <div class="form-content">
-                    <?php echo form_open_multipart('admin/MainController/addMain'); ?>
+                    <?php echo form_open_multipart('MainController/addMain'); ?>
                     <div class="row">
                         
                         <div class="col-md-6">

@@ -121,30 +121,30 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current "><a href="home">Home</a>
+                                <li class="current "><a href="<?php echo base_url() ?>home">Home</a>
                                    
                                 </li>
                                 
                                  <li class="dropdown"><a href="#">About</a>
                                     <ul>
-                                        <li><a href="about">Company Profile</a></li>
-                                        <li><a href="mission">Mission & Vision</a></li>
-                                        <li><a href="quality_control">Quality control</a></li>
+                                        <li><a href="<?php echo base_url() ?>about">Company Profile</a></li>
+                                        <li><a href="<?php echo base_url() ?>mission">Mission & Vision</a></li>
+                                        <li><a href="<?php echo base_url() ?>quality_control">Quality control</a></li>
                                         
                                         
                                         
                                     </ul>
                                 </li>
-                                <li class=""><a href="main-product">Products</a>
+                                <li class=""><a href="<?php echo base_url() ?>main-product">Products</a>
                                    
                                 </li>
-                                  <li class=""><a href="capability">Capability</a></li>
-                                 <li class=""><a href="blog">Blog</a>
+                                  <li class=""><a href="<?php echo base_url() ?>capability">Capability</a></li>
+                                 <li class=""><a href="<?php echo base_url() ?>blog">Blog</a>
                                    
                                 </li>
                                
                              
-                                <li><a href="contact">Contact</a></li>
+                                <li><a href="<?php echo base_url() ?>contact">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -173,7 +173,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="" title=""><img src="<?php echo base_url() ?>assets/images/logo-small.png" alt="" title=""></a>
+                    <a href="<?php echo base_url() ?>" title=""><img src="<?php echo base_url() ?>assets/images/logo-small.png" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
