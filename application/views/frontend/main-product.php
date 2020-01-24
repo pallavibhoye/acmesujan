@@ -70,10 +70,10 @@
          <div class="row">
 
         <div class="chembutton col-md-12">
-            <div class="products dropdown">
-         <!--    <a href="/products/chemicals/chemistry/list/6/">
+            <!-- <div class="products dropdown">
+             <a href="/products/chemicals/chemistry/list/6/">
                
-            </a> -->
+            </a> 
              <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page">
                  Phase Transfer Catalyst <span class="caret"></span>
             </a>
@@ -84,7 +84,7 @@
                 <li><a href="#">Quaternary Pyridinium Compounds</a></li>
                  <li><a href="#">Sulfonium Compounds</a></li>
             </ul>
-        </div>
+        </div> -->
 
         </div>
         <?php
