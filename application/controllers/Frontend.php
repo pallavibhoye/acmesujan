@@ -19,7 +19,8 @@ class Frontend extends CI_Controller
         if ($page === 'main-product') {
             $data['data'] = $this->Add_model->fetch('maincategory');
         }
-        $this->load->view('frontend/header');
+        $data['title']=$page;
+        $this->load->view('frontend/header',$data);
         $this->load->view('frontend/' . $page, $data);
         $this->load->view('frontend/footer');
     }
