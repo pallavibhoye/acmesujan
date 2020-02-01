@@ -4,7 +4,7 @@
 <!-- Mirrored from t.commonsupport.com/industar/about by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 09:28:54 GMT -->
 <head>
 <meta charset="utf-8">
-<title>About Us</title>
+<title><?php echo $title; ?></title>
 
 <!-- Stylesheets -->
 <link href="<?php echo base_url() ?>assets/css/bootstrap.css" rel="stylesheet">
