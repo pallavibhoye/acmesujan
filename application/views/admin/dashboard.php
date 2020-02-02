@@ -14,7 +14,7 @@
     </div>
  
   </div> -->
-  <div class="col-sm-4">
+  <div class="col-sm-3">
   <div class="card">
     <div class="card card-1 p-4">
    Total Main Categories  
@@ -24,9 +24,22 @@
  <a href="<?php echo base_url('/admin/Show/MainCategories'); ?>" class="btn btn-link">Show All </a>
   </div>
 </div>
-  
+
   </div>
-  <div class="col-sm-4">
+
+  <div class="col-sm-3">
+  <div class="card">
+    <div class="card card-1 p-4">
+    Dropdown Categories  
+   <h1>
+ <?php echo count($Dropdown);?>
+ </h1>
+ <a href="<?php echo base_url('/admin/Show/DropDownCategories'); ?>" class="btn btn-link">Show All </a>
+  </div>
+</div>
+  </div>
+
+  <div class="col-sm-3">
   <div class="card">
     <div class="card card-1 p-4">
     
@@ -39,7 +52,7 @@
 </div>
   
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-3">
   <div class="card">
     <div class="card card-1 p-4">
    Total Products  

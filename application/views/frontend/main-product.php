@@ -68,39 +68,40 @@
                           
         </div>
          <div class="row">
-
+         <?php
+        if(isset($data)){
+            foreach ($data as $key=> $main ) {
+            ?>
         <div class="chembutton col-md-12">
-            <!-- <div class="products dropdown">
-             <a href="/products/chemicals/chemistry/list/6/">
-               
-            </a> 
-             <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page">
-                 Phase Transfer Catalyst <span class="caret"></span>
+            <div class="products dropdown">
+
+            <?php if($main['link']!=''){ 
+                 $slug=str_replace(" ","_",$main['link']);
+                ?>
+                <a href="<?php echo base_url() ?>product/<?php echo $slug ?>">
+               <?php echo $main['title'] ?><span class="caret"></span>
             </a>
+            <?php } else {?>
+                <a id="dLabel" role="button" data-toggle="dropdown"  data-target="#" href="/page">
+               <?php echo $main['title'] ?><span class="caret"></span>
+            </a>
+            <?php }?>
                 <ul class="dropdown-menu multi-level sub-menu-list" role="menu" aria-labelledby="dropdownMenu">
-              <li><a href="sub-product">Short Chain Quaternary Ammonium Compounds</a></li>
-              <li><a href="#">Long Chain Quaternary Ammonium Compounds</a></li>
-               <li><a href="#">Quaternary Phosphonium Compounds</a></li>
-                <li><a href="#">Quaternary Pyridinium Compounds</a></li>
-                 <li><a href="#">Sulfonium Compounds</a></li>
+                    <?php
+                    if(isset($dropdownCategories)){
+                       foreach ($dropdownCategories as $row ) {
+                        $slug=str_replace(" ","_",$row['title']);
+                           if($row['maincategory_id']===$main['id']){
+                    ?>
+                <li><a href="<?php echo base_url() ?>/sub-product/<?php echo $slug ?>"><?php echo  $row['title'] ?></a></li>
+                       <?php } } } ?>
             </ul>
-        </div> -->
+        </div>
 
         </div>
         <?php
-        if($data){
-        foreach ($data as $key => $mainCat) { 
-            $slug=str_replace(" ","_",$mainCat['title']);
-            ?>
-            <div class="chembutton col-md-12">
-            <div class="products">
-            <a href="<?php echo base_url() ?>sub-product/<?php echo $slug ?>">
-               <?php echo $mainCat['title']; ?>
-            </a>
-        </div>
-
-        </div>
-     <?php   }} ?>
+            } } ?>
+      
     
 
     </div>

@@ -46,10 +46,10 @@ class Welcome extends CI_Controller
 	public function dashboard()
 	{
 		$data['MainCats'] = $this->Add_model->fetch('maincategory');
+		$data['Dropdown'] = $this->Add_model->fetch('dropdownCategories');
 		$data['SubCats'] = $this->Add_model->getMains();
 		$data['products'] = $this->Add_model->fetchProducts();
 		// redirect('Dashboard');
-
 		$this->load->view('common/adminheader');
 		$this->load->view('admin/dashboard', $data);
 	}
@@ -64,9 +64,16 @@ class Welcome extends CI_Controller
 	}
 
 
-	public function addBook()
+	public function addBook( $dropDownCategoryId = '')
 	{
 		if (!$this->input->post()) {
+
+			$data['selected'] = -1;
+			if ($dropDownCategoryId != "") {
+				$data['selected'] = $dropDownCategoryId;
+				$data['dropDownCategories'] = $this->Add_model->getDropDownCategoriesByID($dropDownCategoryId);
+			}
+
 			$data['title'] = 'Sub Category';
 			$data['mainCategories'] = $this->Add_model->fetch('maincategory');
 			//	print_r($data);
@@ -76,6 +83,7 @@ class Welcome extends CI_Controller
 
 			$alldata = array(
 				'maincategory_id' => $this->input->post('maincategory_id'),
+				'dropdown_id' => $this->input->post('dropdown_id'),
 				'author_name' => $this->input->post('author_name'),
 				'hsn' => $this->input->post('hsn'),
 				'abbr' => $this->input->post('abbr'),
@@ -93,15 +101,11 @@ class Welcome extends CI_Controller
 		}
 	}
 
-	public function addSub($subCatId = "")
+	public function addSub()
 	{
 		if (!$this->input->post()) {
 			$data['title'] = 'Product';
-			$data['selected'] = -1;
-			if ($subCatId != "") {
-				$data['selected'] = $subCatId;
-				$data['subCategories'] = $this->Add_model->getSubByID($subCatId);
-			}
+		
 			$data['mainCategories'] = $this->Add_model->fetch('maincategory');
 
 			//print_r($data);
@@ -144,12 +148,14 @@ class Welcome extends CI_Controller
 			$alldata = array(
 				'image' => $store,
 				'maincategory_id' => $this->input->post('maincategory_id'),
+				'dropdown_id' => $this->input->post('dropdown_id'),
 				'author_name' => $this->input->post('author_name'),
 				'main_cat' => $this->input->post('main_cat'),
 				'description' => $this->input->post('description'),
 				'pdf_path' => $store_pdf,
+				'isChecked' => $this->input->post('isChecked')=="on"?1:0,
 			);
-			//	print_r($data);
+				//print_r($alldata);
 			$resp = $this->Add_model->addbook($alldata);
 			if ($resp) {
 				$this->session->set_flashdata('success', 'Product added Successfully');
@@ -159,6 +165,31 @@ class Welcome extends CI_Controller
 			redirect('admin/addSub');
 		}
 	}
+
+	public function addDropdown()
+	{
+		if (!$this->input->post()) {
+			$data['title'] = 'Dropdown Category';
+			$data['mainCategories'] = $this->Add_model->fetch('maincategory');
+			//	print_r($data);
+			$this->load->view('common/adminheader', $data);
+			$this->load->view('admin/add-dropdown', $data);
+		} else {
+
+			$alldata = array(
+				'maincategory_id' => $this->input->post('maincategory_id'),
+				'title' => $this->input->post('title'),
+			);
+			$resp = $this->Add_model->addDropdowntoDb($alldata);
+			if ($resp) {
+				$this->session->set_flashdata('success', 'Dropdown Category added Successfully');
+			} else {
+				$this->session->set_flashdata('error', 'Some error occured please try again');
+			}
+			redirect('admin/addDropDown');
+		}
+	}
+
 	public function Show($type)
 	{
 		if ($type == "") {
@@ -183,10 +214,26 @@ class Welcome extends CI_Controller
 			}
 			$data['SubCategories'] = $SubCategories;
 		}
+		if ($type == 'DropDownCategories') {
+			$data['title'] = "Dropdown Categories";
+			$dropDownCategories = array();
+			$data['dropDownCategories'] = array();
+			$data['mainCategory'] = $this->Add_model->fetch('maincategory');
+			foreach ($data['mainCategory'] as $main) {
+				$resp = $this->Add_model->getDropDownCategoriesByID($main["id"]);
+				if ($resp) {
+					$dropDownCategories[$main["title"]] = $resp;
+				}
+			}
+			$data['dropDownCategories'] = $dropDownCategories;
+		}
+
 		if ($type == 'Products') {
 			$data['title'] = "Products";
 			$data['products'] = $this->Add_model->fetchProducts();
 		}
+
+
 		$this->load->view('common/adminheader');
 		$this->load->view('admin/Show/display', $data);
 	}
@@ -210,6 +257,10 @@ class Welcome extends CI_Controller
 			$data['title'] = "Products";
 			$resp = $this->Add_model->deleteById($id, 'books');
 		}
+		if ($type == 'DropDownCategories') {
+			$data['title'] = "dropDownCategories";
+			$resp = $this->Add_model->deleteById($id, 'dropdownCategories');
+		}
 		if ($resp) {
 			$this->session->set_flashdata('success', 'Deleted Successfully');
 		} else {
@@ -217,4 +268,21 @@ class Welcome extends CI_Controller
 		}
 		redirect('admin/Show/' . $type);
 	}
+
+	public function getAllOptions()
+	{
+		
+			$id = $this->input->post('id');
+			$type = $this->input->post('type');
+		if($type=='dropdownCategory'){
+			$data['options'] = $this->Add_model->getDropDownCategoriesByID($id);
+
+		}
+		else {
+			$data['options'] = $this->Add_model->getSubByDropDownID($id);
+		}
+		
+		echo json_encode($data);
+	}
+
 }

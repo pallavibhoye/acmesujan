@@ -18,15 +18,30 @@
                                 <input type="file" id="files" class="form-control d-none" name="image" onchange="readURL(this);"  />
 
                             </div> -->
+                         
                             <div class="form-group">
                                  <label>Select Main Category</label>
-                               <select name="maincategory_id" class="form-control">
+                               <select name="maincategory_id" class="form-control" 
+                               id="maincategory_id" required>
                                    <option value=""> select one </option>
                                    <?php foreach($mainCategories as $cat){?>
+                                    <option value="<?php echo $cat['id']; ?>"
+                                    <?php echo $cat['id']===$selected?"selected":" "; ?>
+                                    ><?php echo $cat['title']; ?></option>
+                                   <?php } ?>
+                               </select>
+                            </div>
+                            <?php if(isset($dropDownCategories)) {  ?>
+                             <div class="form-group">
+                                 <label>Select Dropdown Category</label>
+                               <select name="dropdown_id" class="form-control" required>
+                                   <option value=""> select one </option>
+                                   <?php foreach($dropDownCategories as $cat){?>
                                     <option value="<?php echo $cat['id']; ?>"><?php echo $cat['title']; ?></option>
                                    <?php } ?>
                                </select>
                             </div>
+                                   <?php } ?>
                             <div class="form-group">
                                  <label>Product name</label>
                                 <input type="text" class="form-control" placeholder="Title" name="author_name" value=""/>
@@ -78,4 +93,10 @@
 
             reader.readAsDataURL(input.files[0]);
         }
-    }</script>
+    }
+    
+    $("#maincategory_id").change(function(){
+        let id=$(this).val();
+        window.location.href="<?php echo base_url()?>admin/addMain/"+id;
+    })
+    </script>

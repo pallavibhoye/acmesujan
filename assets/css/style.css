@@ -141,6 +141,13 @@ form.example::after {
      line-height: 30px;
      font-weight: 300;
  }
+
+ .note p{
+  font-size: 23px;
+color: #000000;
+line-height: 65px;
+font-weight: 300;
+}
  
  a{
    text-decoration:none;
