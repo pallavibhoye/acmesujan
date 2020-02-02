@@ -47,7 +47,10 @@
             <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/Main">
                 <span class="fa fa-plus"></span>
                Add Main Category </a> || 
-              <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addMain">
+              <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addDropDown">
+                <span class="fa fa-plus"></span>
+               Add Dropdown Category </a> ||
+               <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addMain">
                 <span class="fa fa-plus"></span>
                Add Sub Category </a> || 
                    <a class="btn btn-sm btn-outline-secondary " href="<?php echo base_url() ?>admin/addSub">
@@ -67,6 +70,7 @@
 </form> -->
           </div>
 </main>
+<div class="row  col-md-12 justify-content-center">
 <?php
 if($this->session->flashdata('success')) {
   $message = $this->session->flashdata('success');
@@ -79,10 +83,10 @@ if($this->session->flashdata('success')) {
 if($this->session->flashdata('error')) {
   $message = $this->session->flashdata('error');
   ?>
-<div class="alert alert-error"><?php echo $message; ?></div>
+<div class="alert alert-danger"><?php echo $message; ?></div>
 <?php 
 }
 ?>
-        
+</div> 
           
         

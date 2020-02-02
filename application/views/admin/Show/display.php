@@ -65,6 +65,36 @@
            </div>
 
 <?php }}?>
+<?php 
+    if(isset($dropDownCategories)){
+      
+          foreach ($dropDownCategories as $key=> $main ) {
+           ?> <h6 class="text-secondary my-2"><strong>Main Category - </strong> <?php echo $key; ?></h6> 
+           <div class="row w-100"><?php
+            foreach ($main as $row ) {
+     ?>
+     <div class="col-sm-4">
+  <div class="card">
+    <div class="card card-1">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo $row['title']; ?></h5>
+     
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated <?php echo $row['created_at']; ?></small>
+      <button class="delete btn btn-danger" data-type="DropDownCategories" data-id="<?php echo $row['id']; ?>">Delete </button>
+ 
+    </div>
+ 
+  </div>
+</div>
+  
+  </div>
+   <?php } ?>
+           </div>
+
+<?php }}?>
+
    <?php 
     if(isset($mainCategories)){
 

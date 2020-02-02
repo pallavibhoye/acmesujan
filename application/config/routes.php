@@ -51,12 +51,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['admin/Dashboard'] = 'welcome/dashboard';
 $route['admin/addMain'] = 'welcome/addBook';
+$route['admin/addMain/(:any)'] = 'welcome/addBook/$1';
+$route['admin/addDropDown'] = 'welcome/addDropdown';
 $route['admin/addSub'] = 'welcome/addSub';
-$route['admin/addSub/(:any)'] = 'welcome/addSub/$1';
 $route['admin/Show/(:any)'] = 'welcome/show/$1';
 $route['admin/Delete/(:any)/(:any)'] = 'welcome/delete/$1/$2';
 $route['admin/logout'] = 'welcome/logout';
 $route['admin/Main'] = 'MainController';
+$route['admin/getAllOptions'] = 'welcome/getAllOptions';
 $route['admin'] = 'welcome';
 $route['SubmitToGetPdf'] = 'frontend/SubmitToGetPdf';
 $route['sub-product/(:any)'] = 'frontend/renderSubProduct/$1';
