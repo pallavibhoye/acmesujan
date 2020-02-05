@@ -28,6 +28,7 @@ class Add_model extends CI_Model{
 		$sql = "SELECT * FROM books WHERE dropdown_id IS NOT ? AND (main_cat = ? OR main_cat IS ?)";
 
 		$query = $this->db->query($sql, array(Null, ' ', NULL));
+		
 		return $query->result_array();
 	}
 	public function getSubByID($id)
