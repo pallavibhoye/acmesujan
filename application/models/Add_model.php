@@ -31,6 +31,7 @@ class Add_model extends CI_Model{
 		
 		return $query->result_array();
 	}
+	
 	public function getSubByID($id)
 	{
 		$sql = "SELECT * FROM books WHERE dropdown_id = ? AND (main_cat = ? OR main_cat IS ?)";
