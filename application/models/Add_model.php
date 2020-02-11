@@ -1,5 +1,4 @@
 <?php 
-
 class Add_model extends CI_Model{
 
 	public $dropdownCategories='dropdownCategories';
@@ -109,5 +108,3 @@ public function getSubDetails($id)
 	return $query->result_array();
 }
 }
-
- ?>
