@@ -55,6 +55,30 @@ class MainController extends CI_Controller {
 	
 	}
 
+	public function do_upload()
+	{
+		$this->load->Model('FileUpload');
+		$config['upload_path'] = './assets/uploads-img/';
+        $config['allowed_types'] = 'pdf|jpg|png';
+
+         $this->load->library('upload', $config);
+
+            if ( $this->upload->do_upload('userfile'))
+               
+                { 
+                        $data = $this->upload->data();
+
+						  //print_r($data);
+						$alldata = array('Img'=>$data['file_name']);	
+						$this->FileUpload->do_upload($alldata); 
+
+                }
+                else{
+                	echo "error";
+                }
+	}
+
+
 
 
 }

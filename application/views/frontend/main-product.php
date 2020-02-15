@@ -37,7 +37,7 @@
                 <h1>Products</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="home"><i class="la la-home"></i>Home</a></li>
-                    <li>Products</li>
+                    <li>ABOUT OUR PRODUCTS</li>
                 </ul>
             </div>
         </div>
@@ -50,13 +50,14 @@
                 <div>
                         <ul class="tab1">
                             
-                            <li class="tablinks active hvr-bounce-to-bottom"><a href="about"> Company Profile</a></li>
-                           <li class="hvr-bounce-to-bottom"><a href="mission">Mission & Vision</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="quality_control">Quality Control</a></li>
+                          
+                            <li class="tablinks  "><i class="fa fa-angle-right"></i>&nbsp;<a href="about"> Company Profile</a></li>
+                           <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="mission">Mission & Vision</a></li>
+                            <li class=""><i class="fa fa-angle-right"></i>&nbsp;<a href="quality_control">Quality Control</a></li>
                        
-                            <li class="hvr-bounce-to-bottom"><a href="">News 1</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 2</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 3</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 1</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 2</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 3</a></li>
 
                         </ul>
                     </div>

@@ -23,12 +23,15 @@
     <style>
         table {
             border: 1px solid grey !important;
-            width: 50% !important;
+            width: 100% !important;
         }
 
         th,
         td {
-            border: 1px solid grey !important;
+                border: 1px solid grey !important;
+               padding: .8em;
+              background: #ffffffc9;
+                  padding-left: 2em;
         }
     </style>
 </head>
@@ -49,7 +52,8 @@
                     <h1>Products</h1>
                     <ul class="bread-crumb clearfix">
                         <li><a href="home"><i class="la la-home"></i>Home</a></li>
-                        <li>Products</li>
+                        <li><?php   echo $slug;  ?></li>
+                       
                     </ul>
                 </div>
             </div>
@@ -86,7 +90,7 @@
                     <center>
 
                         <a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-danger btn-lg">MSDS</button></a>&nbsp;&nbsp;
-                        <a href=""><button class="btn btn-primary btn-lg">Spec Sheet</button></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-primary btn-lg">Spec Sheet</button></a>
                     </center><br>
 
                 </div>
@@ -133,12 +137,8 @@
                                 </div>
 
 
-
-
-
-
                                 <div class="form-group">
-                                    <button title="Submit Request" type="submit" class="send-form">Send</button>
+                                    <button title="Submit Request" type="submit" class="send-form">Download</button>
                                 </div>
                             </form>
                         </div>

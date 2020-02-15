@@ -18,6 +18,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
@@ -47,8 +48,8 @@
     <!--End Page Title-->
 <div class="container">
         <!-- <a href=""><img src="images/pdf.jpg" class="img-responsive" style="float: right;"></a> -->
-        <ul class="tab1 tab-pdf">
-                            <li class="main-tab hvr-bounce-to-bottom"><h5><a href="">Download Catalogue & Company Profile PPT</a></h5></li>
+       <ul class=" tab-pdf">
+                            <li class="main-tab hvr-bounce-to-bottom"><h5><a href="<?php echo base_url()?>assets/uploads-img/<?php echo $pdfData[0]['Img']; ?>" download>Download Catalogue & Company Profile PPT</a></h5></li>
                         </ul>
         
     </div>
@@ -70,15 +71,16 @@
 
                    <div class="col-md-3">
                     <div>
-                        <ul class="tab1">
+                         <ul class="tab1">
                             
-                           <li class="tablinks active hvr-bounce-to-bottom"><a href="about"> Company Profile</a></li>
-                           <li class="hvr-bounce-to-bottom"><a href="mission">Mission & Vision</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="quality_control">Quality Control</a></li>
+                            <li class="tablinks  "><i class="fa fa-angle-right"></i>&nbsp;<a href="about"> Company Profile</a></li>
+                           <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="mission">Mission & Vision</a></li>
+                            <li class="active"><i class="fa fa-angle-right"></i>&nbsp;<a href="quality_control">Quality Control</a></li>
                        
-                            <li class="hvr-bounce-to-bottom"><a href="">News 1</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 2</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 3</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 1</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 2</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 3</a></li>
+
                         </ul>
                     </div>
                 </div>

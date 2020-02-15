@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from t.commonsupport.com/industar/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Aug 2019 09:38:29 GMT -->
+
 <head>
 <meta charset="utf-8">
 <title>Acme Sujan Chemicals</title>
@@ -10,6 +10,7 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -34,10 +35,10 @@
     <section class="page-banner" style="background-image:url(<?php echo base_url() ?>assets/images/main-slider/contact-us-banner.jpg);">
         <div class="auto-container">
             <div class="inner-container clearfix">
-                <h1>Blogs</h1>
+                <h1>News</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="home"><i class="la la-home"></i>Home</a></li>
-                    <li>Blogs</li>
+                    <li>News</li>
                 </ul>
             </div>
         </div>
@@ -48,59 +49,33 @@
         <div class="auto-container">
 
             <div class="row">
+             
+            
                 <!-- News Block -->
-                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-1.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="post-info">
-                               <li><span class="material-icons">event</span> March 16, 2019</li>
-                                        <li><span class="material-icons">person</span> Name</li>
-                            </ul>
-                            <h5><a href="">Title</a></h5>
-                            <div class="text">Duis velit sapien, fringilla quis libero vitae, sollicitudin sollicitudin erat. Nulla in sapien pretium, gravida odio non.</div>
-                            <div class="link-box"><a href="">Read more <i class="la la-long-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
-                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-2.jpg" alt=""></a></figure>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="post-info">
-                                 <li><span class="material-icons">event</span> March 16, 2019</li>
-                                        <li><span class="material-icons">person</span> Name</li>
-                            </ul>
-                            <h5><a href="">Title</a></h5>
-                            <div class="text">Duis velit sapien, fringilla quis libero vitae, sollicitudin sollicitudin erat. Nulla in sapien pretium, gravida odio non.</div>
-                            <div class="link-box"><a href="">Read more <i class="la la-long-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
+                <?php 
+                if (!empty($blog)) {
+                    foreach ($blog as $blogtp ) { 
+                        
+                    
+                 ?>
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="<?php echo base_url() ?>assets/images/resource/news-3.jpg" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="<?php echo base_url().'assets/blog-img/'.$blogtp['Image'] ?>" style="width: 100%; height: 15em;" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <ul class="post-info">
-                                <li><span class="material-icons">event</span> March 16, 2019</li>
-                                        <li><span class="material-icons">person</span> Name</li>
+                                
+                                        <li><span class="material-icons"></span>Name : <?php echo $blogtp['Author'] ?></li>
                             </ul>
-                            <h5><a href="">Title</a></h5>
-                            <div class="text">Duis velit sapien, fringilla quis libero vitae, sollicitudin sollicitudin erat. Nulla in sapien pretium, gravida odio non.</div>
-                            <div class="link-box"><a href="">Read more <i class="la la-long-arrow-right"></i></a></div>
+                            <h5><a href=""><?php echo $blogtp['Title'] ?></a></h5>
+                            <div class="text"><?php echo $blogtp['Discription'] ?></div>
+                            <div class="link-box"><a href="<?php echo base_url() ?>blog-details/<?php echo $blogtp['Blog-id']?>">Read more <i class="la la-long-arrow-right"></i></a></div>
                         </div>
                     </div>
                 </div>
+
+<?php } } ?>
 
             
 

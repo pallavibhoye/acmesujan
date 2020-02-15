@@ -276,23 +276,7 @@
                             </div>
                         </div>
 
-                        <!-- List Item -->
-                        <div class="list-item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <img src="<?php echo base_url() ?>assets/images/demo.jpg" class="img-responsive">
-                                </div>
-                                <div class="col-md-9">
-                                    <ul class="post-info">
-                                        <li>January 18, 2019</li>
-
-                                    </ul>
-                                    <h5><a href="blog-detail">Heading Heading Heading Heading Heading Heading </a></h5>
-                                    <div class="comments"> Demo Text Demo Text Demo Text Demo Text Demo Text Demo Text
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
 
 
                         <div class="btn-box"><a href="#" class="theme-btn btn-style-one">View All Posts</a></div>

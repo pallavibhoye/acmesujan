@@ -30,6 +30,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
@@ -139,7 +140,7 @@
                                    
                                 </li>
                                   <li class=""><a href="<?php echo base_url() ?>capability">Capability</a></li>
-                                 <li class=""><a href="<?php echo base_url() ?>blog">Blog</a>
+                                 <li class=""><a href="<?php echo base_url() ?>blog">News</a>
                                    
                                 </li>
                                

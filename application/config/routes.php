@@ -59,10 +59,15 @@ $route['admin/Delete/(:any)/(:any)'] = 'welcome/delete/$1/$2';
 $route['admin/logout'] = 'welcome/logout';
 $route['admin/Main'] = 'MainController';
 $route['admin/getAllOptions'] = 'welcome/getAllOptions';
+$route['admin/blogs'] = 'BlogController/blogs';
+$route['admin/addBlog'] = 'BlogController/addBlog';
+$route['admin/editBlog/(:any)'] = 'BlogController/editBlog/$1';
+
 $route['admin'] = 'welcome';
 $route['SubmitToGetPdf'] = 'frontend/SubmitToGetPdf';
 $route['sub-product/(:any)'] = 'frontend/renderSubProduct/$1';
 $route['product/(:any)'] = 'frontend/renderProduct/$1';
+$route['blog-details/(:any)'] = 'frontend/renderBlogWithId/$1';
 $route['(:any)'] = 'frontend/index/$1';
 $route['default_controller'] = 'frontend';
 

@@ -1,4 +1,5 @@
 <?php 
+
 class Add_model extends CI_Model{
 
 	public $dropdownCategories='dropdownCategories';
@@ -27,10 +28,8 @@ class Add_model extends CI_Model{
 		$sql = "SELECT * FROM books WHERE dropdown_id IS NOT ? AND (main_cat = ? OR main_cat IS ?)";
 
 		$query = $this->db->query($sql, array(Null, ' ', NULL));
-		
 		return $query->result_array();
 	}
-	
 	public function getSubByID($id)
 	{
 		$sql = "SELECT * FROM books WHERE dropdown_id = ? AND (main_cat = ? OR main_cat IS ?)";
@@ -107,4 +106,12 @@ public function getSubDetails($id)
 	$query = $this->db->get('books');
 	return $query->result_array();
 }
+
+// public function addBlog($alldata)
+// 	{
+// 		// $this->db->where('id', 0);
+// 	 $this->db->insert('blog',$alldata);
+// 	}
 }
+
+ ?>
