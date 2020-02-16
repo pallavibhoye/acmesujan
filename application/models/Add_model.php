@@ -16,11 +16,13 @@ class Add_model extends CI_Model{
 	}
 	public function fetchProducts()
 	{
-		$sql = "SELECT * FROM books WHERE (main_cat != ? OR main_cat IS NOT ?) OR dropdown_id IS ? ";
+		// $sql = "SELECT * FROM books WHERE (main_cat != ? OR main_cat IS NOT ?) OR dropdown_id IS ? ";
 
-		$query = $this->db->query($sql, array(" ", NULL , null));
+		// $query = $this->db->query($sql, array(" ", NULL , null));
 		
-		return $query->result_array();
+		// return $query->result_array();
+
+		return $this->db->get_where('books' ,array('isProduct'=>1))->result_array();
 	}
 	public function getMains() // get mains from books not required
 	{
@@ -32,9 +34,9 @@ class Add_model extends CI_Model{
 	}
 	public function getSubByID($id)
 	{
-		$sql = "SELECT * FROM books WHERE dropdown_id = ? AND (main_cat = ? OR main_cat IS ?)";
+		$sql = "SELECT * FROM books WHERE dropdown_id = ? AND (main_cat = ? OR main_cat IS ?) AND isProduct = ?";
 
-		$query = $this->db->query($sql, array($id, ' ', NULL));
+		$query = $this->db->query($sql, array($id, ' ', NULL , 0));
 		return $query->result_array();
 	}
 	public function addMainCategory($alldata)
@@ -107,11 +109,14 @@ public function getSubDetails($id)
 	return $query->result_array();
 }
 
-// public function addBlog($alldata)
-// 	{
-// 		// $this->db->where('id', 0);
-// 	 $this->db->insert('blog',$alldata);
-// 	}
+public function editById($id, $table){
+	return $this->db->get_where($table,array('id'=>$id))->result_array();
+}
+
+public function updateData($data , $id , $table){
+	$this->db->where('id' , $id);
+	return $this->db->update($table, $data);
+}
 }
 
  ?>

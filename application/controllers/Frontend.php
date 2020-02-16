@@ -65,6 +65,11 @@ class Frontend extends CI_Controller
 
             $data['data'] = $this->Add_model->getSubByID($mainCategoryId[0]['id']);
         }
+        print_r($data['data'][0]['main_cat']);
+        if( $data['data'][0]['main_cat']==''){
+           $productName = str_replace(" ","_",$data['data'][0]['author_name']);
+           redirect('product/'.$productName);
+        }
         $data['slug']= $mainCateegoryTitle;
             $this->load->view('frontend/header');
             $this->load->view('frontend/sub-product', $data);
@@ -87,6 +92,7 @@ class Frontend extends CI_Controller
             $this->load->view('frontend/header');
             $this->load->view('frontend/products', $data);
             $this->load->view('frontend/footer');
+            
         }
     }
     
