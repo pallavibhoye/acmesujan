@@ -16,8 +16,9 @@
     <!--End Page Title-->
     <div class="container">
         <!-- <a href=""><img src="images/pdf.jpg" class="img-responsive" style="float: right;"></a> -->
-        <ul class="tab1 tab-pdf">
-                            <li class="main-tab hvr-bounce-to-bottom"><h5><a href="">Download Catalogue & Company Profile PPT</a></h5></li>
+        <ul class=" tab-pdf">
+
+                            <li class="main-tab hvr-bounce-to-bottom"><h5><a href="<?php echo base_url()?>assets/uploads-img/<?php echo $pdfData[0]['Img']; ?>" download>Download Catalogue & Company Profile PPT</a></h5></li>
                         </ul>
         
     </div>
@@ -33,13 +34,13 @@
                     <div>
                         <ul class="tab1">
                             
-                            <li class="tablinks active hvr-bounce-to-bottom"><a href="about"> Company Profile</a></li>
-                           <li class="hvr-bounce-to-bottom"><a href="mission">Mission & Vision</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="quality_control">Quality Control</a></li>
+                            <li class="tablinks active "><i class="fa fa-angle-right"></i>&nbsp;<a href="about"> Company Profile</a></li>
+                           <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="mission">Mission & Vision</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="quality_control">Quality Control</a></li>
                        
-                            <li class="hvr-bounce-to-bottom"><a href="">News 1</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 2</a></li>
-                            <li class="hvr-bounce-to-bottom"><a href="">News 3</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 1</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 2</a></li>
+                            <li ><i class="fa fa-angle-right"></i>&nbsp;<a href="">News 3</a></li>
 
                         </ul>
                     </div>

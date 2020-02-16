@@ -17,7 +17,7 @@
   <div class="col-sm-3">
   <div class="card">
     <div class="card card-1 p-4">
-   Total Main Categories  
+   Total Main Categories 
    <h1>
  <?php echo count($MainCats);?>
  </h1>
@@ -66,4 +66,15 @@
   </div>
 
 </div>
+</div>
+
+<div class="container">
+  <br><br>
+ <?php
+
+  echo form_open_multipart('MainController/do_upload');
+  echo form_upload(['name'=>'userfile']);
+  echo form_submit(['name'=>'submit', 'value'=>'submit', 'class'=>'btn btn-danger']);
+  echo form_close();
+?>
 </div>

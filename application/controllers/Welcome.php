@@ -154,6 +154,7 @@ class Welcome extends CI_Controller
 				'description' => $this->input->post('description'),
 				'pdf_path' => $store_pdf,
 				'isChecked' => $this->input->post('isChecked')=="on"?1:0,
+				'isProduct' =>1
 			);
 				//print_r($alldata);
 			$resp = $this->Add_model->addbook($alldata);

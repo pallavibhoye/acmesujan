@@ -38,7 +38,7 @@
                 <h1>Products</h1>
                 <ul class="bread-crumb clearfix">
                     <li><a href="home"><i class="la la-home"></i>Home</a></li>
-                    <li>Products</li>
+                    <li><?php   echo $slug;  ?></li>
                 </ul>
             </div>
         </div>

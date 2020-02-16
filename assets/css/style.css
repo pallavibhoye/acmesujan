@@ -1918,9 +1918,9 @@ font-weight: 300;
  .page-banner .bread-crumb li{
    position: relative;
    float: left;
-   font-size: 13px;
+   font-size: 20px;
    line-height: 25px;
-   color: #184400;
+   color: #98f565;
    font-weight: 400;
    text-transform: capitalize;
    cursor: default;
@@ -5599,7 +5599,7 @@ font-weight: 300;
  .news-block .image-box .image{
    position: relative;
    margin-bottom: 0;
-   background-color: #184400;
+   background-color: #e6e6e6;
    overflow: hidden;
  }
  
@@ -5650,7 +5650,7 @@ font-weight: 300;
  .news-block .lower-content .post-info li{
    position: relative;
    display: inline-block;
-   font-size: 12px;
+   font-size: 21px;
    line-height: 25px;
    color: #5a5a5a;
    font-weight: 400;
@@ -6361,7 +6361,7 @@ font-weight: 300;
  .blog-detail .news-block .lower-content p{
    position: relative;
    display: block;
-   font-size: 15px;
+   font-size: 19px;
    line-height: 25px;
    color: #3c3b3b;
    margin-bottom: 20px;
@@ -9888,7 +9888,7 @@ font-weight: 300;
  .sidebar .contact-widget .contact-list li{
    position:relative;
    display: block;
-   font-size: 15px;
+   font-size: 19px;
    line-height: 25px;
    color: #3c3b3b;
    font-weight: 400;
@@ -10290,7 +10290,7 @@ font-weight: 300;
    background-color: #f1f1f1;*/
    width: 100%;
    margin-bottom: 1em;
-  /* border: 1px solid #005600;*/
+     border: 1px solid #005600;
   /* height: 300px;*/
  }
  .tab-pdf li{
@@ -10298,11 +10298,11 @@ font-weight: 300;
      float: right;
  }
  .tab1 li {
-   display: block;
-   background-color: #034b61;
-   color: black;
-   padding: 14px 16px;
-       border-bottom: 17px solid white;
+      display: block;
+    /* background-color: #034b61; */
+    color: black;
+    padding: 14px 16px;
+/*    border-bottom: 1px solid #dedede;*/
    width: 100%;
  
    outline: none;
@@ -10310,6 +10310,27 @@ font-weight: 300;
    cursor: pointer;
    transition: 0.3s;
    font-size: 21px;
+ }
+ .tab1 li:hover .fa{
+  color: green;
+ }
+ .tab-pdf li{
+     display: block;
+    background-color: #034b61;
+    color: black;
+    padding: 14px 16px;
+    border-bottom: 17px solid white;
+  width: 38%!important;
+    float: right;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 21px;
+ }
+ .tab-pdf li a{
+      text-align: center;
+    color: white;
  }
  .about-sec{
    margin: 2em 0em;
@@ -10324,10 +10345,15 @@ font-weight: 300;
  
  /* Change background color of buttons on hover */
  .tab1 li:hover {
-   /*background-color: #5c5b5d;*/
+  background-color: #eee;
  }
  .tab1 li:hover a {
-  color: #ffffff;
+  color: #005700;
+
+ }
+ .tab1 li{
+    text-align: left!important;
+  padding-left:  1em!important;
  }
  .tab1 h5{
       
@@ -10339,15 +10365,15 @@ font-weight: 300;
  }
  .tab1 li, a{
    text-align: center;
-   color: white;
+   color: black;
  /*    letter-spacing: 1px;*/
  }
  /* Create an active/current "tab button" class */
  .tab1 li.active {
-   background-color: #1b1a1c;
+   background-color: #dedede;
  }
  .tab1 li.active a{
-   color: white;
+   color: #005700;
  }
  /* Style the tab1 content */
  .tab1content {
@@ -10357,6 +10383,9 @@ font-weight: 300;
    width: 70%;
    border-left: none;
   /* height: 300px;*/
+ }
+ .blog-categories li a{
+  text-align: left!important;
  }
  .values h3{
  color: #005600;

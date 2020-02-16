@@ -13,7 +13,7 @@
         
         
      ?>
-     <div class="col-sm-4">
+     <div class="col-sm-12 mt-3">
   <div class="card">
     <div class="card card-1">
       <?php if($row['image']!='default.png'){?>
@@ -25,6 +25,7 @@
     <div class="card-footer">
       <small class="text-muted">Last updated <?php echo $row['created_at']; ?></small>
       <button class="delete btn btn-danger" data-type="Products" data-id="<?php echo $row['id']; ?>">Delete </button>
+      <button class="edit btn btn-success" data-type="Products" data-id="<?php echo $row['id']; ?>">Edit </button>
  
     </div>
  
@@ -37,7 +38,7 @@
     if(isset($SubCategories)){
       
           foreach ($SubCategories as $key=> $main ) {
-           ?> <h6 class="text-secondary my-2"><strong>Main Category - </strong> <?php echo $key; ?></h6> 
+           ?> <h6 class="text-secondary my-3 alert alert-primary w-100"><strong>Main Category - </strong> <?php echo $key; ?></h6> 
            <div class="row w-100"><?php
             foreach ($main as $row ) {
      ?>
@@ -54,6 +55,7 @@
     <div class="card-footer">
       <small class="text-muted">Last updated <?php echo $row['created_at']; ?></small>
       <button class="delete btn btn-danger" data-type="SubCategories" data-id="<?php echo $row['id']; ?>">Delete </button>
+      <button class="edit btn btn-success" data-type="SubCategories" data-id="<?php echo $row['id']; ?>">Edit </button>
  
     </div>
  
@@ -69,7 +71,7 @@
     if(isset($dropDownCategories)){
       
           foreach ($dropDownCategories as $key=> $main ) {
-           ?> <h6 class="text-secondary my-2"><strong>Main Category - </strong> <?php echo $key; ?></h6> 
+           ?> <h6 class="text-secondary my-3 alert alert-primary w-100"><strong>Main Category - </strong> <?php echo $key; ?></h6> 
            <div class="row w-100"><?php
             foreach ($main as $row ) {
      ?>
@@ -83,7 +85,7 @@
     <div class="card-footer">
       <small class="text-muted">Last updated <?php echo $row['created_at']; ?></small>
       <button class="delete btn btn-danger" data-type="DropDownCategories" data-id="<?php echo $row['id']; ?>">Delete </button>
- 
+      <button class="edit btn btn-success" data-type="DropDownCategories" data-id="<?php echo $row['id']; ?>">Edit </button>
     </div>
  
   </div>
@@ -112,6 +114,7 @@
     <div class="card-footer">
       <small class="text-muted">Added on<?php echo $row['created_at']; ?></small>
       <button class="delete btn btn-danger" data-type="MainCategories" data-id="<?php echo $row['id']; ?>">Delete </button>
+      <button class="edit btn btn-success" data-type="MainCategories" data-id="<?php echo $row['id']; ?>">Edit </button>
     </div>
  
   </div>
@@ -128,5 +131,10 @@ $(".delete").click(function(){
         let type=$(this).data('type');
       let confirmation=  confirm("Are you sure you want to delete this?")
        if(confirmation) {window.location.href="<?php echo base_url()?>admin/Delete/"+id+"/"+type;}
+    })
+    $(".edit").click(function(){
+        let id=$(this).data('id');
+        let type=$(this).data('type');
+       window.location.href="<?php echo base_url()?>admin/Edit/"+id+"/"+type;
     })
     </script>

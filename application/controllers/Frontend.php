@@ -8,8 +8,9 @@ class Frontend extends CI_Controller
     {
         parent::__construct();
         $this->load->library('session');
-
+       $this->load->Model('BlogModels');
         $this->load->model('Add_model');
+
     }
 
 
@@ -38,6 +39,17 @@ class Frontend extends CI_Controller
             $data['dropdownCategories'] = $this->Add_model->fetch('dropdownCategories');
             $data['directLinked'] = $this->Add_model->getDirectLinkedCats();
         }
+
+            if($page=='about'||$page=='mission'||$page=='quality_control'){
+ $this->load->model('FileUpload');
+ $data['pdfData'] = $this->FileUpload->getPdf();
+            }
+             
+             if($page=='blog'){
+
+       $Bloglist = $this->BlogModels->getAllBlogs();
+       $data['blog']=$Bloglist;       
+             }   
         $data['title']=$page;
         $this->load->view('frontend/header',$data);
         $this->load->view('frontend/' . $page, $data);
@@ -52,6 +64,11 @@ class Frontend extends CI_Controller
             if($mainCategoryId){
 
             $data['data'] = $this->Add_model->getSubByID($mainCategoryId[0]['id']);
+        }
+        print_r($data['data'][0]['main_cat']);
+        if( $data['data'][0]['main_cat']==''){
+           $productName = str_replace(" ","_",$data['data'][0]['author_name']);
+           redirect('product/'.$productName);
         }
         $data['slug']= $mainCateegoryTitle;
             $this->load->view('frontend/header');
@@ -75,6 +92,7 @@ class Frontend extends CI_Controller
             $this->load->view('frontend/header');
             $this->load->view('frontend/products', $data);
             $this->load->view('frontend/footer');
+            
         }
     }
     
@@ -91,4 +109,13 @@ class Frontend extends CI_Controller
 
 
 	}
+
+    function renderBlogWithId($id){
+                 $this->load->view('frontend/header');
+                $blog = $this->BlogModels->getblog($id);
+                $data['singleBlog'] =$blog;
+                // print_r($blog);
+                $this->load->view('frontend/blog-details',$data);
+                $this->load->view('frontend/footer');
+    }
 }
